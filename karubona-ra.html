@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>カルボナーラ</title>
+    <link rel="stylesheet" href="karubona-ra.css">
+    <!-- グーグルフォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Noto+Sans+JP:wght@100..900&family=Poppins:wght@700&display=swap" 
+    rel="stylesheet">
+    <!--  -->
+    <script src="https://kit.fontawesome.com/e0da361d22.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="body"></div>
+    <header>
+        <!-- ヘッダー -->
+        <!--  インスタ，YouTube，googleフォーム，メニューバーへのショートカット-->
+        <div class="container flex pop">
+            <a href="" class="logo">
+                <span>タイトル</span>
+            </a>
+            <nav>
+                <ul class="header_menu flex">
+                    <ul><a href="https://www.instagram.com/ichiichi0622/" target="_blank"><i class="fa-brands fa-instagram icon"></i></a></ul>
+                    <ul><a href="https://www.youtube.com/@%E9%B4%A8%E5%B7%9D%E3%83%81%E3%83%A3%E3%83%B3%E3%82%B9" target="_blank"><i class="fa-brands fa-youtube icon"></i></a></ul>
+                    <ul><a href="https://forms.gle/rXA8bHZTAwafwbmQ9" target="_blank"><i class="fa-solid fa-paper-plane icon"></i></a></ul>
+                    <ul><div onclick="bar()"><a><i class="fa-solid fa-bars icon"></i></a></div></ul>
+
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    
+    <main>
+        <!-- メニューバー -->
+        <section id="menubar" class="menubar">
+            <div  id="returen" class="returen" onclick="back()"><i class="fa-solid fa-square-xmark icon"></i></div>
+            <div>
+                <ul class="menubarlist">
+                    <ul><a href="#profile">profile</a></ul>
+                    <ul><a href="#section2">section2</a></ul>
+                    <ul><a href="#section3">section3</a></ul>
+                    <ul><a href="#news">最新情報</a></ul>
+                </ul>
+            </div>
+        </section>
+        <!-- 表紙写真 -->
+        <section id="hero" class="container" >
+            <div class="hero_inner">
+                <p class="pop">？？？？？？</p>
+                <h1>？？？？？</h1>
+            </div>
+        </section>
+
+        <section id="music" class="container music">
+            <div>
+                <button id="play" onclick="musicplay()"></button>
+            </div>
+            <div>music</div>
+        </section>
+
+
+        <!-- 第一段落　プロフィール -->
+        <section id="profile" class="container">
+            <h2 class="title pop">Profile</h2>
+            <h3>ここにプロフィールの説明を書いていく</h3>
+            <div class="flex">
+                <div class="column-2">
+                    <p class="text">ここには文字を乗っけるああああああああああああああああああああああああああああああああああああああ
+                        <br>あああああああああああああああああああああああ</p>
+                        <br>あああああああああああああああああああああああ</p>
+                        <br>あああああああああああああああああああああああ</p>
+                        <br>あああああああああああああああああああああああ</p>
+                        <br>あああああああああああああああああああああああ</p>
+                        <br>あああああああああああああああああああああああ</p>
+                        <br>あああああああああああああああああああああああ</p>
+                </div>
+                <div class="column-2 profile-img"></div>
+            </div>
+        </section>
+        <!-- 第二段落 -->
+        <section id="section2" class="container">
+            <h2 class="title pop">section2</h2>
+            <h3>ここにセクション２の説明を書いていく</h3>
+            <div class="flex">
+                <div class="column-2">
+                    <p class="text">ここには文字を乗っけるああああああああああああああああああああああああああああああああああああああ
+                        <br>ああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+                        <br>あああああああああああああああああああああああ
+                        <br>ああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+                        <br>ああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+                        <br>ああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+                        <br>あああああああああああああああああああああああ</p>
+                </div>
+                <div class="column-2 section2-img"></div>
+            </div>
+        </section>
+        <!-- 第三段楽 -->
+        <section id="section3" class="container">
+            <h2 class="title pop">section3</h2>
+            <h3>ここにsection3の説明を書いていく</h3>
+            <div class="flex">
+                <div class="column-2 news">
+                    <p class="text">ここには文字を乗っけるああああああああああああああああああああああああああああああああああああああ
+                        <br>あああああああああああああああああああああああ
+                        <br>あああああああああああああああああああああああ
+                        <br>あああああああああああああああああああああああ
+                        <br>あああああああああああああああああああああああ
+                        <br>あああああああああああああああああああああああ
+                        <br>あああああああああああああああああああああああ
+                        <br>あああああああああああああああああああああああ
+                        <br>あああああああああああああああああああああああ
+                        <br>あああああああああああああああああああああああ
+                        <br>あああああああああああああああああああああああ
+                        <br>あああああああああああああああああああああああ
+                        <br>あああああああああああああああああああああああ
+                        <br>あああああああああああああああああああああああ
+                        <br>あああああああああああああああああああああああ
+                        <br>あああああああああああああああああああああああ
+                        <br>あああああああああああああああああああああああ
+                        <br>あああああああああああああああああああああああ
+                        <br>あああああああああああああああああああああああ
+
+                    </p>
+                        
+                </div>
+                <div class="column-2 section3-img"></div>
+            </div>
+        </section>
+        <!-- 第四段落 -->
+        <section id="news" class="container">
+            <h2 class="title pop">ニュース</h2>
+            <h3>最新情報</h3>
+            <div id="newslink" class="news"></div>
+            
+            
+        </section>
+
+    </main>
+
+    <footer>
+       
+    </footer>
+</body>
+<script src="karubona-ra.js"></script>
+<script src="script.js"></script>
+</html>
