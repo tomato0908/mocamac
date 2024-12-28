@@ -1,7 +1,7 @@
 const items = document.getElementById("items");
 
 // JSONファイルを読み込む
-fetch('https://tomato0908.github.io/mocamac/news.json')
+fetch('news.json')
     .then(response => {
         if (!response.ok) {
             throw new Error('JSONファイルの読み込みに失敗しました');
