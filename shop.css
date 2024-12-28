@@ -1,4 +1,38 @@
 .img {
     width: 250px;
-    height: 450px;
+    height: 350px;
+}
+
+table {
+    padding: 5px;
+    border: 5x solid black;
+    border-spacing: none;
+}
+
+th , td {
+    border: 2px solid black;
+    padding: 10px;
+    
+ 
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    /* 上下０　左右オートのマージン */
+    margin: 0 auto;
+    /* 親要素 */
+    position: relative;
+   
+    /* border: dashed red; */
+    margin-bottom: 100px;
+}
+
+.flex {
+    /* 横並びにする */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+
 }
