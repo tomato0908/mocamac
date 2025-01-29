@@ -3,7 +3,7 @@ const newsContainer = document.getElementById('newslink');
 
 
 // JSONファイルを読み込む
-fetch('news.json')
+fetch('topic.json')
     .then(response => {
         if (!response.ok) {
             throw new Error('JSONファイルの読み込みに失敗しました');
@@ -14,16 +14,16 @@ fetch('news.json')
     .then(data => {
         // ニュースデータをループしてHTMLに追加
       
-        data.forEach(news => {
+        data.forEach(topic => {
             // ニュースを表示するHTMLを作成
-            const newsItem = `
+            const topicItem = `
                 <div>
-                    <h3>${news.date} - ${news.title}</h3>
-                    <p>${news.content}</p>
+                    <h3>${topic.date} - ${topic.title}</h3>
+                    <p>${topic.content}</p>
                     <hr>
                 </div>
             `;
-            newsContainer.innerHTML += newsItem;
+            newsContainer.innerHTML += topicItem;
         });
        
     })

@@ -1,4 +1,5 @@
 const items = document.getElementById("items");
+let count = 1;
 
 // JSONファイルを読み込む
 fetch('https://tomato0908.github.io/mocamac/news.json')
@@ -9,13 +10,17 @@ fetch('https://tomato0908.github.io/mocamac/news.json')
         }
         return response.json(); // JSONデータを解析
     })
+    
+    
 
 
     .then(data => {
         // ニュースデータをループしてHTMLに追加
-      
+        console.log(data.length);
+        
         data.forEach(news => {
             // ニュースを表示するHTMLを作成
+
             const newsItem = `
         <table id="shoptable" class="shoptable">
             <tr>
@@ -30,7 +35,14 @@ fetch('https://tomato0908.github.io/mocamac/news.json')
         </table>
             `;
             items.innerHTML += newsItem;
+            console.log(count+"表示中");
+            if(count%2==0) {
+                console.log(count);
+                let div01 = document.createElement('div');
+            }
+            count++;
         });
+
        
     })
     .catch(error => {
