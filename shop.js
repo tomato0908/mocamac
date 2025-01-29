@@ -2,7 +2,7 @@ const items = document.getElementById("items");
 let count = 1;
 
 // JSONファイルを読み込む
-fetch('https://tomato0908.github.io/mocamac/news.json')
+fetch('https://tomato0908.github.io/mocamac/shop.json')
     .then(response => {
         if (!response.ok) {
             throw new Error('JSONファイルの読み込みに失敗しました');
@@ -18,19 +18,19 @@ fetch('https://tomato0908.github.io/mocamac/news.json')
         // ニュースデータをループしてHTMLに追加
         console.log(data.length);
         
-        data.forEach(news => {
+        data.forEach(shop => {
             // ニュースを表示するHTMLを作成
 
             const newsItem = `
         <table id="shoptable" class="shoptable">
             <tr>
-                <th>商品名</th>
+                <th>${shop.title}</th>
             </tr>
             <tr>
-                <td><img src="image01.jpg" class="img"></td>
+                <td>${shop.image}</td>
             </tr>
             <tr>
-                <td>値段</td>
+                <td>${shop.price}</td>
             </tr>
         </table>
             `;
