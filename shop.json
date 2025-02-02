@@ -1,34 +1,34 @@
 [
     {   
         "title": "商品名A",
-        "image": "shop_image001.png",
+        "image": "shop_image/image001.png",
         "price": "¥1000-"
     },
 
     {   
         "title": "商品名B",
-        "image": "shop_image002.png",
+        "image": "shop_image/image002.png",
         "price": "¥3000-"
     },
 
 
     {   
         "title": "商品名c",
-        "image": "shop_image003.png",
+        "image": "shop_image/image003.png",
         "price": "¥100-"
     },
 
 
     {   
         "title": "商品名D",
-        "image": "shop_image002.png",
+        "image": "shop_image/image004.png",
         "price": "¥1800-"
     },
 
 
     {   
         "title": "商品名E",
-        "image": "shop_image001.png",
+        "image": "shop_image/image001.png",
         "price": "¥10-"
     }
 

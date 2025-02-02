@@ -27,7 +27,7 @@ fetch('https://tomato0908.github.io/mocamac/shop.json')
                 <th>${shop.title}</th>
             </tr>
             <tr>
-                <td><img clas="img" srs="${shop.image}"</td>
+                <td><img clas="img" srs="${shop.image}"></td>
             </tr>
             <tr>
                 <td>${shop.price}</td>
